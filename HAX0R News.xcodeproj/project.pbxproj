@@ -7,19 +7,28 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		5122E3B425D5DC5100EE5756 /* DetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122E3B325D5DC5100EE5756 /* DetailView.swift */; };
+		5122E3B725D5DFFA00EE5756 /* WebView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5122E3B625D5DFFA00EE5756 /* WebView.swift */; };
 		51BE924E25D5C76900F1F2CE /* HAX0R_NewsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE924D25D5C76900F1F2CE /* HAX0R_NewsApp.swift */; };
 		51BE925025D5C76900F1F2CE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE924F25D5C76900F1F2CE /* ContentView.swift */; };
 		51BE925225D5C76A00F1F2CE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BE925125D5C76A00F1F2CE /* Assets.xcassets */; };
 		51BE925525D5C76A00F1F2CE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 51BE925425D5C76A00F1F2CE /* Preview Assets.xcassets */; };
+		51BE925F25D5CEEB00F1F2CE /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE925E25D5CEEB00F1F2CE /* NetworkManager.swift */; };
+		51BE926325D5CFEE00F1F2CE /* PostData.swift in Sources */ = {isa = PBXBuildFile; fileRef = 51BE926225D5CFEE00F1F2CE /* PostData.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		5122E3B325D5DC5100EE5756 /* DetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailView.swift; sourceTree = "<group>"; };
+		5122E3B625D5DFFA00EE5756 /* WebView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebView.swift; sourceTree = "<group>"; };
+		5122E3B925D5E17100EE5756 /* HAX0R News.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "HAX0R News.entitlements"; sourceTree = "<group>"; };
 		51BE924A25D5C76900F1F2CE /* HAX0R News.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "HAX0R News.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		51BE924D25D5C76900F1F2CE /* HAX0R_NewsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HAX0R_NewsApp.swift; sourceTree = "<group>"; };
 		51BE924F25D5C76900F1F2CE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		51BE925125D5C76A00F1F2CE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		51BE925425D5C76A00F1F2CE /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		51BE925625D5C76A00F1F2CE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		51BE925E25D5CEEB00F1F2CE /* NetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		51BE926225D5CFEE00F1F2CE /* PostData.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostData.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -33,6 +42,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		5122E3B125D5DC3D00EE5756 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				51BE924F25D5C76900F1F2CE /* ContentView.swift */,
+				5122E3B325D5DC5100EE5756 /* DetailView.swift */,
+				5122E3B625D5DFFA00EE5756 /* WebView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
 		51BE924125D5C76900F1F2CE = {
 			isa = PBXGroup;
 			children = (
@@ -52,8 +71,10 @@
 		51BE924C25D5C76900F1F2CE /* HAX0R News */ = {
 			isa = PBXGroup;
 			children = (
+				5122E3B925D5E17100EE5756 /* HAX0R News.entitlements */,
 				51BE924D25D5C76900F1F2CE /* HAX0R_NewsApp.swift */,
-				51BE924F25D5C76900F1F2CE /* ContentView.swift */,
+				5122E3B125D5DC3D00EE5756 /* Views */,
+				51BE925D25D5CEDF00F1F2CE /* Models */,
 				51BE925125D5C76A00F1F2CE /* Assets.xcassets */,
 				51BE925625D5C76A00F1F2CE /* Info.plist */,
 				51BE925325D5C76A00F1F2CE /* Preview Content */,
@@ -67,6 +88,15 @@
 				51BE925425D5C76A00F1F2CE /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		51BE925D25D5CEDF00F1F2CE /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				51BE925E25D5CEEB00F1F2CE /* NetworkManager.swift */,
+				51BE926225D5CFEE00F1F2CE /* PostData.swift */,
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -138,7 +168,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51BE925F25D5CEEB00F1F2CE /* NetworkManager.swift in Sources */,
+				51BE926325D5CFEE00F1F2CE /* PostData.swift in Sources */,
 				51BE925025D5C76900F1F2CE /* ContentView.swift in Sources */,
+				5122E3B725D5DFFA00EE5756 /* WebView.swift in Sources */,
+				5122E3B425D5DC5100EE5756 /* DetailView.swift in Sources */,
 				51BE924E25D5C76900F1F2CE /* HAX0R_NewsApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +301,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HAX0R News/HAX0R News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HAX0R News/Preview Content\"";
 				DEVELOPMENT_TEAM = 4UG72MC2H7;
@@ -279,6 +315,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiirochi.HAX0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -289,6 +326,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = "HAX0R News/HAX0R News.entitlements";
+				"CODE_SIGN_IDENTITY[sdk=macosx*]" = "Apple Development";
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"HAX0R News/Preview Content\"";
 				DEVELOPMENT_TEAM = 4UG72MC2H7;
@@ -301,6 +340,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.shiirochi.HAX0R-News";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
